@@ -1,13 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Fraunces, Montserrat -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.perfume { 
+  width: 100%; 
+  height: 90vh;
+  border: 1px solid hsl(30, 38%, 92%);
+  background-color: hsl(30, 38%, 92%);
+
+
+}
+
+.perf--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+  .perfume img{
+    width: 250px;
+    height: 350px;
+    border-radius: 5px;
+  }
+
+.perf--texts{
+  padding-left: 20px;
+  padding-right: 10px;
+  width: 250px;
+  height: 350px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+}
+
+#amount{
+  font-weight: 700;
+  color: rgba(5, 108, 82, 0.896);
+}
+
+span{
+  font-size: 10px;
+  padding-left: 80px;
+  
+}
+
+#same--color, #perf--title{
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  font-family: Montserrat;
+}
+#perf--title{
+  letter-spacing: 3px;
+}
+
+button{
+  background-color: rgba(5, 108, 82, 0.896);
+  color: white;
+  width: 200px;
+  height: 30px;
+  border-radius: 7px;
+  border-color: rgba(5, 108, 82, 0.896);
+}
+
+@media (max-width: 480px) {
+  .perf--container{
+    max-width: 250px;
+    display: inline-block;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
